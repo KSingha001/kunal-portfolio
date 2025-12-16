@@ -1,0 +1,28 @@
+import { useState } from 'react'
+import './App.css'
+import About from './sections/About'
+import Hero from './sections/Hero'
+import Skills from './sections/Skills'
+import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+import { socials } from './data/content'
+import Navbar from './components/Navbar'
+import Projects from './sections/Projects'
+
+function App() {
+
+  return (
+    <div className='relative min-h-screen bg-bg-dark text-slate-50'>
+      <div className="background-grid" />
+      <Navbar/>
+      <Hero/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact socials={socials}/>
+      <Footer/>
+    </div>
+  )
+}
+
+export default App
